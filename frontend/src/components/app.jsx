@@ -8,9 +8,14 @@ class App extends React.Component {
       <div id="main-div">
         <h1 id="title-header">Josh's Dashboard</h1>
         <div id="body-div">
-          <input
-            type="text"
-          />
+          <form id="form">
+            <input 
+              id="input"
+              type="text"
+              placeholder="Write your input here"
+            />
+            <input type="submit" id="submit-button" value="Submit" />
+          </form>
         </div>
       </div>
     )

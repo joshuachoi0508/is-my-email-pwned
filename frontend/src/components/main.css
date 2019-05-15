@@ -34,3 +34,31 @@ body {
   background: #00000073;
   align-items: center;
 }
+
+#form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#input {
+  width: 471px;
+  height: 40px;
+  background: #000000cc;
+  border: 1px solid white;
+  color: #c5c5c5;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 20px;
+  padding: 0 6px;
+}
+
+#submit-button {
+  width: 140px;
+  height: 42px;
+  background: #000000cc;
+  border: 1px solid white;
+  border-radius: 13px;
+  color: #c5c5c5;
+  font-size: 20px;
+  cursor: pointer;
+}
