@@ -1,5 +1,6 @@
 import React from 'react';
 import './reset.scss'; 
+import './main.css';
 
 const App = () => (
   <div>
