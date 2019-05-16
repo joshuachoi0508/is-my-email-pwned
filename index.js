@@ -1,4 +1,5 @@
 const express = require('express');
+const bodyParser = require('body-parser')
 
 // set up express app
 const app = express();
@@ -12,6 +13,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 //initialize routes
+app.use(bodyParser.json());
 app.use('/api', require('./routes/api.js'));
 
 //listen for requests

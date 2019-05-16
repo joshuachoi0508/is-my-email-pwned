@@ -8,7 +8,6 @@ const receivePwnedInfo = result => ({
 })
 
 export const fetchPwnedInfo = email => dispatch => {
-  debugger
   APIUtil.checkPwned(email)
       .then(result => dispatch(receivePwnedInfo(result)))
 };

@@ -3,10 +3,12 @@ const router = express.Router();
 const fetch = require("node-fetch");
 
 router.post('/pwned', (req, res) => {
-  console.log(req.body);
   const url = "https://haveibeenpwned.com/api/breachedaccount/";
-  fetch(url + req.body)
-    .then(response => res.json({ msg: JSON.parse(response) }))
+  fetch(url + req.body.email)
+    .then(response => {
+      response.json()
+        .then(result => res.json(result))
+    })
 })
 
 module.exports = router;
