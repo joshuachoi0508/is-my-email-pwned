@@ -1,11 +1,12 @@
 import { connect } from 'react-redux';
-import App from './app';
 import { fetchPwnedInfo } from '../actions/actions';
+import App from './app';
 
-const mapDispatchToProps = (dispatch, ownProps) => {
-    return {
-        fetchPwnedInfo: email => dispatch(fetchPwnedInfo(email))
-    };
+const mapDispatchToProps = (dispatch) => {
+  debugger;
+  return {
+      fetchPwnedInfo: email => dispatch(fetchPwnedInfo(email))
+  };
 };
 
 
