@@ -17,7 +17,7 @@ class App extends React.Component {
         <div id="body-div">
           <form 
             id="form"
-            onSubmit={() => (this.props.fetchPwnedInfo(this.state.email))}
+            onSubmit={() => (this.props.fetchPwnedInfo(this.state))}
           >
             <input 
               id="input"
