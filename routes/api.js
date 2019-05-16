@@ -1,20 +1,12 @@
 const express = require('express');
 const router = express.Router();
+const fetch = require("node-fetch");
 
-router.get('/ninjas', (req, res) => {
-  res.send({type: "GET"})
-});
-
-router.post('/ninjas', (req, res) => {
-  res.send({type: "POST"})
-});
-
-router.put('/ninjas/:id', (req, res) => {
-  res.send({type: "PUT"})
-});
-
-router.delete('/ninjas/:id', (req, res) => {
-  res.send({type: "DELETE"})
-});
+router.post('/pwned', (req, res) => {
+  console.log("heyo")
+  const url = "https://haveibeenpwned.com/api/breachedaccount/";
+  fetch(url + req.body)
+    .then(response => res.json({ msg: JSON.parse(response) }))
+})
 
 module.exports = router;
