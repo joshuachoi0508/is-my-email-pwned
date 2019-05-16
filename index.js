@@ -15,6 +15,6 @@ if (process.env.NODE_ENV === 'production') {
 app.use('/api', require('./routes/api.js'));
 
 //listen for requests
-app.listen(process.env.port || 4000, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log('now listening for requests!');
 })
