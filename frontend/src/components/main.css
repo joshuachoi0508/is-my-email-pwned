@@ -1,13 +1,14 @@
 body {
   font-family: 'Chakra Petch', sans-serif;
   background: url(../../public/background.gif);
+  background-size: cover;
   height: 100vh;
   min-width: 800px;
-  min-height: 124px;
+  min-height: 400px;
 }
 
 #title-header {
-  width: 643.281px;
+  width: 721.281px;
   height: 104px;
   color: white;
   font-size: 80px;
@@ -25,14 +26,7 @@ body {
 }
 
 #body-div {
-  display: flex;
-  flex-direction: column;
-  width: 643.281px;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding: 20px 45px;
-  background: #00000073;
-  align-items: center;
+  width: 700.281px;
 }
 
 #form {
@@ -53,7 +47,7 @@ body {
 }
 
 #submit-button {
-  width: 140px;
+  width: 175px;
   height: 42px;
   background: #000000cc;
   border: 1px solid white;

@@ -6,7 +6,7 @@ class App extends React.Component {
   render() {
     return(
       <div id="main-div">
-        <h1 id="title-header">Josh's Dashboard</h1>
+        <h1 id="title-header">Have I been pwned?</h1>
         <div id="body-div">
           <form id="form">
             <input 
