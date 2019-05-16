@@ -7,7 +7,7 @@ const receivePwnedInfo = result => ({
   result
 })
 
-export const fetchPwnedInfo = email => dispatch => (
+export const fetchPwnedInfo = email => dispatch => {
     APIUtil.checkPwned(email)
         .then(result => dispatch(receivePwnedInfo(result)))
-);
+};
