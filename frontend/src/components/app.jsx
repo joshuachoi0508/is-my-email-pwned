@@ -3,6 +3,7 @@ import './reset.scss';
 import './main.css';
 
 class App extends React.Component {
+
   render() {
     return(
       <div id="main-div">
