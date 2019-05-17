@@ -8,6 +8,7 @@ router.post('/pwned', (req, res) => {
     .then(response => {
       response.json()
         .then(result => res.json(result))
+        .catch(error => res.json(error));
     })
 })
 
