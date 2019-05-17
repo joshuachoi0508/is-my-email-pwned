@@ -111,4 +111,6 @@ ol {
   padding: 0 50px 50px 171px;
   margin-top: 20px;
   font-size: 41px;
+  max-height: 278px;
+  overflow-y: overlay;
 }
