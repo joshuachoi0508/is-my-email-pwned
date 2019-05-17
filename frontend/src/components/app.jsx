@@ -32,6 +32,7 @@ class App extends React.Component {
         <h1 id="title-header">Have I been pwned?</h1>
 
         <div id="body-div">
+
           <form 
             id="form"
             onSubmit={() => (this.props.fetchPwnedInfo(this.state))}
@@ -44,6 +45,7 @@ class App extends React.Component {
             />
             <input type="submit" id="submit-button" value="Submit" />
           </form>
+
         </div>
 
         <div id="result-div">
@@ -52,6 +54,7 @@ class App extends React.Component {
             {this.displaySites()}
           </ol>
         </div>
+
       </div>
     )
   }

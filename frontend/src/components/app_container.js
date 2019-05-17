@@ -2,8 +2,9 @@ import { connect } from 'react-redux';
 import { fetchPwnedInfo } from '../actions/actions';
 import App from './app';
 
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = (state) => {
   let pwnSites = [];
+  
   if (state.result) pwnSites = state.result;
 
   return {

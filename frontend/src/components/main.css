@@ -1,7 +1,13 @@
 @keyframes change-font-color {
-    from {color: white;}
-    50% {color: #ffffff5e;}
-    to {color: white;}
+    from {
+      color: white;
+    }
+    50% {
+      color: #ffffff38;
+    }
+    to {
+      color: white;
+    }
 }
 
 body {
@@ -19,11 +25,10 @@ ol {
 
 #title-header {
   animation-name: change-font-color;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   width: 721.281px;
   height: 104px;
-  /* color: white; */
   font-size: 80px;
   border: 1px solid white;
   border-radius: 10px;
@@ -68,7 +73,7 @@ ol {
   color: #c5c5c5;
   font-size: 20px;
   cursor: pointer;
-  transition: all .3s;
+  transition: all .5s;
 }
 
 #submit-button:hover {
