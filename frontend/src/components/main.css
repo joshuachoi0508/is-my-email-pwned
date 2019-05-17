@@ -1,13 +1,7 @@
 @keyframes change-font-size {
-    from {
-      font-size: 80px;
-    }
-    50% {
-      font-size: 75px;
-    }
-    to {
-      font-size: 80px
-    }
+    from {font-size: 80px;}
+    50% {font-size: 75px;}
+    to {font-size: 80px}
 }
 
 body {
