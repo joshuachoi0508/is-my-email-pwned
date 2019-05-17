@@ -8,6 +8,8 @@ class App extends React.Component {
     this.state = {
       email: ''
     };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   displaySites(){
@@ -26,6 +28,11 @@ class App extends React.Component {
     return <li>Nowhere!</li>
   }
 
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.fetchPwnedInfo(this.state)
+  }
+
   render() {
     return(
       <div id="main-div">
@@ -35,7 +42,7 @@ class App extends React.Component {
 
           <form 
             id="form"
-            onSubmit={() => (this.props.fetchPwnedInfo(this.state))}
+            onSubmit={this.handleSubmit}
           >
             <input 
               id="input"
