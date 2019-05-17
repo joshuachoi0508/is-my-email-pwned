@@ -1,18 +1,31 @@
+@keyframes change-font-color {
+    from {color: white;}
+    50% {color: #ffffff5e;}
+    to {color: white;}
+}
+
 body {
   font-family: 'Chakra Petch', sans-serif;
   background: url(../../public/background.gif);
   background-size: cover;
   height: 100vh;
   min-width: 830px;
-  min-height: 400px;
+  min-height: 950px;
+}
+
+ol {
+  list-style-type: square;
 }
 
 #title-header {
+  animation-name: change-font-color;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
   width: 721.281px;
   height: 104px;
-  color: white;
+  /* color: white; */
   font-size: 80px;
-  border: 1px solid;
+  border: 1px solid white;
   border-radius: 10px;
   padding: 20px 45px;
   background: #00000073;
@@ -55,4 +68,39 @@ body {
   color: #c5c5c5;
   font-size: 20px;
   cursor: pointer;
+  transition: all .3s;
+}
+
+#submit-button:hover {
+  background: white;
+  color: black;
+  transition: all .3s;
+}
+
+#result-div {
+  width: 721.281px;
+  height: 475px;
+  color: white;
+  font-size: 80px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 20px 45px;
+  background: #00000073;
+  margin-top: 54.6px;
+}
+
+#result-title {
+  display: flex;
+  font-size: 45px;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+#site-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 55px;
+  padding: 0 50px 50px 171px;
+  margin-top: 20px;
+  font-size: 41px;
 }
