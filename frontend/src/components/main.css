@@ -10,7 +10,7 @@ body {
   background-size: cover;
   height: 100vh;
   min-width: 830px;
-  min-height: 950px;
+  min-height: 750px;
 }
 
 ol {
@@ -88,7 +88,7 @@ ol {
   border-radius: 10px;
   padding: 20px 45px;
   background: #00000073;
-  margin-top: 54.6px;
+  margin-top: 21px;
 }
 
 #result-title {
