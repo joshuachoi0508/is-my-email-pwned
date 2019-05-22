@@ -47,7 +47,7 @@ class App extends React.Component {
             <input 
               id="input"
               type="text"
-              placeholder="Write your email here to check if it's been pwned!"
+              placeholder="Enter your email here to check if it's been pwned!"
               onChange={e => (this.setState({email: e.currentTarget.value}))}
             />
             <input type="submit" id="submit-button" value="Submit" />
