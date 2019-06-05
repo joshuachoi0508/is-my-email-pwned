@@ -9,5 +9,5 @@ const receivePwnedInfo = result => ({
 
 export const fetchPwnedInfo = email => dispatch => {
   APIUtil.checkPwned(email)
-      .then(result => dispatch(receivePwnedInfo(result))
+      .then(result => dispatch(receivePwnedInfo(result)))
 };
