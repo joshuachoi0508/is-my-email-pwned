@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const fetch = require("node-fetch");
 
+//3rd party api call with cors
 router.post('/pwned', (req, res) => {
   const url = "https://haveibeenpwned.com/api/breachedaccount/";
   fetch(url + req.body.email)
