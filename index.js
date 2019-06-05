@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const app = express();
 const path = require('path');
 
+//Setting up assets and static page
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('frontend/build'));
   app.get('/', (req, res) => {
@@ -13,6 +14,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 //initialize routes
+//body parser for requests wit body
 app.use(bodyParser.json());
 app.use('/api', require('./routes/api.js'));
 
